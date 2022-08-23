@@ -1,0 +1,81 @@
+.features {
+  margin: 0 20px 46px;
+}
+
+.features__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.features__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features__item {
+  position: relative;
+  padding: 2px 0 0 81px;
+  margin-bottom: 18px;
+  min-height: 60px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #68b738;
+    width: 60px;
+    height: 60px;
+    left: 0;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    background: url("../img/icon-leaf.svg") no-repeat 0 0;
+    display: block;
+    width: 30px;
+    height: 32px;
+    position: absolute;
+    left: 16px;
+    top: 14px;
+  }
+}
+
+.features__item--tub::after {
+  background: url("../img/icon-tub.svg") no-repeat 0 0;
+  width: 29px;
+  height: 31px;
+  left: 16px;
+  top: 13px;
+}
+
+.features__item--eat::after {
+  background: url("../img/icon-eat.svg") no-repeat 0 0;
+  width: 25px;
+  height: 30px;
+  left: 18px;
+  top: 15px;
+}
+
+.features__item--alarm::after {
+  background: url("../img/icon-alarm.svg") no-repeat 0 0;
+  width: 32px;
+  height: 33px;
+  left: 14px;
+  top: 13px;
+}
+
+.features__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+}
