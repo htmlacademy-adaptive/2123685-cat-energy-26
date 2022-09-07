@@ -38,3 +38,39 @@
 .stats__item-period {
   margin-left: 32px;
 }
+
+@media (min-width: @tablet) {
+  .stats {
+    justify-content: flex-start;
+  }
+
+  .stats__item {
+    width: 160px;
+  }
+
+  .stats__item-weight {
+    margin-right: 11px;
+  }
+
+  .stats__item-value {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+    padding: 16px 0;
+  }
+
+  .stats__item-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0 7px;
+    left: 25px;
+    bottom: -7px;
+    background-color: #ffffff;
+  }
+
+  .stats__item-period .stats__item-text {
+    padding: 0 7px;
+    left: 9px;
+  }
+}

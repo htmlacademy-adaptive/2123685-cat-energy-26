@@ -1,5 +1,5 @@
 .features {
-  margin: 0 20px 46px;
+  padding: 0 20px 35px;
 }
 
 .features__title {
@@ -46,6 +46,10 @@
   }
 }
 
+.features__item:last-child {
+  min-height: 0;
+}
+
 .features__item--tub::after {
   background: url("../img/icon-tub.svg") no-repeat 0 0;
   width: 29px;
@@ -78,4 +82,118 @@
   line-height: 18px;
   padding: 0;
   margin: 0;
+}
+
+@media (min-width: @tablet) {
+  .features {
+    padding: 28px 30px 102px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  .features__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .features__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 61px;
+    row-gap: 134px;
+  }
+
+  .features__item {
+    width: 230px;
+    padding: 112px 0 0 0;
+    margin-bottom: 0;
+  }
+
+  .features__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    z-index: 10;
+  }
+
+  .feature__text-container {
+    position: relative;
+    z-index: 5;
+  }
+
+  .features__text::after {
+    content: "1";
+    position: absolute;
+    display: block;
+    right: 6px;
+    top: -40px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: 0;
+  }
+
+  .features__item--tub .features__text::after {
+    content: "2";
+    right: -16px;
+    top: -40px;
+  }
+
+  .features__item--eat .features__text::after {
+    content: "3";
+    position: absolute;
+    display: block;
+    right: -18px;
+    top: -40px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: 0;
+  }
+
+  .features__item--alarm .features__text::after {
+    content: "4";
+    position: absolute;
+    display: block;
+    right: -18px;
+    top: -40px;
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 280px;
+    line-height: 280px;
+    color: #f2f2f2;
+    z-index: 0;
+  }
+
+  .features__item::before {
+    width: 80px;
+    height: 80px;
+    left: 0;
+    top: 0;
+  }
+
+  .features__item::after {
+    width: 30px;
+    height: 32px;
+    left: 24px;
+    top: 25px;
+  }
+
+  .features__item--eat::after {
+    left: 28px;
+    top: 24px;
+  }
+
+  .features__item--alarm::after {
+    left: 24px;
+    top: 22px;
+  }
 }

@@ -45,3 +45,35 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (min-width: @tablet) {
+  .example {
+    padding: 0 0 461px;
+  }
+
+  .example__info-wrapper {
+    background-color: #ffffff;
+    padding: 43px 30px 221px;
+  }
+
+  .example__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 64px;
+  }
+
+  .example__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 37px;
+  }
+
+  .example::after {
+    width: 560px;
+    height: 512px;
+    background-size: cover;
+    bottom: 100px;
+  }
+}
