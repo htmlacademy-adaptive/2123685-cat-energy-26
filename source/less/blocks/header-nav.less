@@ -3,16 +3,67 @@
 }
 
 .header-nav__list {
-  display: none;
+
 }
 
 .header-nav__toggle {
+  display: none;
   border: none;
   width: 24px;
-  height: 18px;
-  background-color: #68b738;
-  display: block;
+  height: 20px;
+  background: url("../img/burger.svg") no-repeat 0 0;
   position: absolute;
   right: 20px;
   top: -42px;
+  cursor: pointer;
+}
+
+.header-nav--js .header-nav__toggle {
+  display: block;
+}
+
+.header-nav--js .header-nav__list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-nav--open .header-nav__list {
+  display: block;
+}
+
+.header-nav--open .header-nav__toggle {
+  background: url("../img/cross.svg") no-repeat center 0;
+}
+
+@media (min-width: @tablet) {
+  .header-nav {
+    position: relative;
+    display: flex;
+    justify-content: end;
+  }
+
+  .header-nav--js .header-nav__toggle {
+    display: none;
+  }
+
+  .header-nav__list {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: -35px;
+  }
+
+  .header-nav--js .header-nav__list {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: auto;
+    margin-left: -35px;
+  }
 }

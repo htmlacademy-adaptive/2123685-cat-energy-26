@@ -40,3 +40,23 @@
 .radio__input:checked + .radio__label::after {
   display: block;
 }
+
+@media (min-width: @tablet) {
+  .radio__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      width: 19px;
+      height: 18px;
+      left: 11px;
+      top: 12px;
+    }
+  }
+}

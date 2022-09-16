@@ -70,3 +70,111 @@
   text-transform: uppercase;
   background-color: #68b738;
 }
+
+@media (min-width: @tablet) {
+  .welcome {
+    padding-bottom: 526px;
+    padding-top: 57px;
+    position: relative;
+    min-height: 285px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 709px;
+      height: 609px;
+      background: url("../img/main-product-welcome-tablet-1x.png");
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+  }
+
+  .welcome__container {
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+
+    &::before {
+      background: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .welcome__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+    width: 416px;
+    text-align: left;
+    margin: 0 117px 41px;
+  }
+
+  .welcome__text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    text-align: left;
+    margin-left: 119px;
+    margin-bottom: 50px;
+  }
+
+  .welcome__link {
+    position: relative;
+    z-index: 5;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    width: auto;
+    display: inline-block;
+    vertical-align: top;
+    padding: 17px 44px;
+    margin: 0 0 0 120px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .welcome {
+    position: relative;
+    padding-top: 111px;
+    padding-bottom: 228px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      background: url("../img/welcome-cat-desktop.jpg") no-repeat right 0;
+      background-size: cover;
+      right: 0;
+      top: -112px;
+      width: 50%;
+      height: calc(100% + 70px);
+    }
+
+    &::after {
+      width: 552px;
+      height: 499px;
+      background: url("../img/main-product-welcome-desktop-1x.png") no-repeat 0 0;
+      transform: translateX(-29%);
+      bottom: 96px;
+    }
+  }
+
+  .welcome__wrapper {
+    width: 1275px;
+    margin: 0 auto;
+    padding-left: 107px;
+    box-sizing: border-box;
+  }
+
+  .welcome__title {
+    margin: 0 0 41px;
+  }
+}
