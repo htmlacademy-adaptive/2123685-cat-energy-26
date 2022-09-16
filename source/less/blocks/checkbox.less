@@ -30,6 +30,25 @@
   }
 }
 
-.checkbox__input:checked + .checkbox__label::after {
+.checkbox__input:checked+.checkbox__label::after {
   display: block;
+}
+
+@media (min-width: @tablet) {
+  .checkbox__label {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 58px;
+
+    &::before {
+      width: 38px;
+      height: 38px;
+      top: -6px;
+    }
+
+    &::after {
+      left: 8px;
+      top: 4px;
+    }
+  }
 }

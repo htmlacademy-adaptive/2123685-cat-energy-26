@@ -13,3 +13,20 @@
 .extra__input:last-child {
   margin-bottom: 0;
 }
+
+@media (min-width: @tablet) {
+  .extra__checkbox-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 65px 16px 71px;
+    column-gap: 55px;
+  }
+
+  .extra__title {
+    margin-bottom: 63px;
+  }
+
+  .extra__input {
+    margin-bottom: 42px;
+  }
+}

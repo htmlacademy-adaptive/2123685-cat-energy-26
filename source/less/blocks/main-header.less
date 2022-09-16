@@ -1,5 +1,29 @@
 .main-header {
   position: relative;
+  z-index: 100;
+}
+
+.main-header__container {
+  position: relative;
   padding-top: 65px;
   background: url("../img/logo-text.svg") no-repeat center 22px;
+}
+
+@media (min-width: @tablet) {
+  .main-header__container {
+    background: none;
+    padding-top: 42px;
+    min-height: 66px;
+    box-sizing: border-box;
+    padding-left: 261px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-header__container {
+    width: 1275px;
+    margin: 0 auto;
+    padding-top: 72px;
+  }
 }

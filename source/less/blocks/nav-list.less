@@ -4,6 +4,7 @@
   list-style-type: none;
   width: 100%;
   background-color: #ffffff;
+  display: none;
 }
 
 .nav-list__item {
@@ -21,4 +22,22 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
+}
+
+@media (min-width: @tablet) {
+  .nav-list__link {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .nav-list__item {
+    border: none;
+    margin-left: 35px;
+    padding-bottom: 11px;
+    margin-bottom: 5px;
+  }
 }
