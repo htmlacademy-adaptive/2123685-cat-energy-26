@@ -144,6 +144,10 @@
 }
 
 @media (min-width: @desktop) {
+  .plans {
+    margin-bottom: 72px;
+  }
+
   .plans__list {
     width: 1220px;
     margin-left: auto;
@@ -152,4 +156,51 @@
     grid-template-columns: 1fr 1fr;
     gap: 80px;
   }
+
+  .plans__item {
+    padding: 77px 27px 58px 53px;
+    margin-bottom: 33px;
+    min-height: 200px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: 46px;
+      left: 52px;  
+      right: unset;
+    }
+  
+    &::after {
+      display: block;
+      width: 70px;
+      height: 97px;
+      left: 67px;
+      top: 41px;
+      right: unset;
+    }
+  }
+  .plans__item--gain::after {
+    width: 134px;
+    height: 56px;
+    left: 33px;
+    right: unset;
+    top: 67px;
+  }
+
+  .plans__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 26px;
+  }
+
+  .plans__title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 161px;
+    margin-bottom: 75px;
+  }
+
 }

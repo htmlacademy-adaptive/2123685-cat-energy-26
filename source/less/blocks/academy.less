@@ -6,7 +6,6 @@
 .academy__wrapper {
   margin: 0 auto;
   display: flex;
-  // max-width: 320px;
   justify-content: center;
 }
 
@@ -47,4 +46,25 @@
 .academy__link:active .academy__logo {
   fill: #68b738;
   opacity: 0.25;
+}
+
+@media (min-width: @tablet) {
+  .academy {
+    margin: 0;
+    padding: 0;
+  }
+
+  .academy__wrapper {
+    align-items: center;
+    padding-top: 4px;
+  }
+
+  .academy__link-text {
+    margin-right: 23px;
+    padding: 0;
+  }
+
+  .academy__link-logo {
+    padding: 6px 0 0 0;
+  }
 }

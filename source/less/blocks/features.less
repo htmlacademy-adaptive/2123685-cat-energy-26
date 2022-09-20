@@ -86,8 +86,9 @@
 
 @media (min-width: @tablet) {
   .features {
-    padding: 28px 30px 102px;
+    padding: 28px 30px 101px;
     border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 42px;
   }
 
   .features__title {
@@ -108,6 +109,7 @@
     width: 230px;
     padding: 112px 0 0 0;
     margin-bottom: 0;
+    min-height: 119px;
   }
 
   .features__text {
@@ -195,5 +197,29 @@
   .features__item--alarm::after {
     left: 24px;
     top: 22px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .features {
+    padding: 0;
+    border-bottom: none;
+    margin: 0 auto 77px;
+    width: 1220px;    
+    position: relative;
+    z-index: 10;
+  }
+
+  .features__title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .features__list {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 61px;
+    row-gap: 134px;
   }
 }

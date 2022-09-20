@@ -1,0 +1,60 @@
+.gift-link {
+  display: block;
+  background: url(../img/gift-cat-mobile.jpg) no-repeat 0 0;
+  background-size: cover;
+  width: 100%;
+  max-width: 400px;
+  min-height: 264px;
+  position: relative;
+  padding-top: 187px;
+  padding-bottom: 41px;
+  box-sizing: border-box;
+  text-align: center;
+
+  &::after {
+    content: "";
+    background: url("../img/icon-gift.svg") no-repeat 0 0;
+    display: block;
+    width: 78px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 59px;
+  }
+}
+
+.gift-link__text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-align: center;
+  width: 170px;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet) {
+  .gift-link {
+    background: url("../img/gift-cat-tablet.jpg") no-repeat 0 0;
+    max-width: 800px;
+    min-height: 200px;
+
+    &::after {
+      left: 78px;
+      bottom: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 82px;
+    }
+  }
+
+  .gift-link__text {
+    left: 422px;
+    transform: translateY(-50%);
+    bottom: 50%;
+  }
+}

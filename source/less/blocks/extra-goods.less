@@ -4,12 +4,11 @@
 
 .extra-goods__list {
   list-style-type: none;
-  padding: 0;
+  padding: 0 20px 34px;
   margin: 0;
 }
 
 .extra-goods__item {
-  margin: 0 20px;
   padding: 13px 0 18px;
   border-top: 1px solid #cdcdcd;
 }
@@ -43,4 +42,65 @@
   justify-content: space-between;
   width: 100%;
   max-width: 300px;
+}
+
+.extra-goods__gift-wrapper {
+  margin: 0 20px 10px;
+}
+
+
+@media (min-width: @tablet) {
+  .extra-goods {
+    border-top: none;
+  }
+
+  .extra-goods__list {
+    padding: 0 30px 68px;
+  }
+
+  .extra-goods__item {
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    padding: 13px 0 28px;
+  }
+
+  .extra-goods__item-title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .extra-goods__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    max-width: 224px;
+    justify-content: flex-end;
+    padding-top: 4px;
+  }
+
+  .extra-goods__item-value {
+    width: 92px;
+    text-align: right;
+  }
+
+  .extra-goods__item-title-text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 38px 21px;
+  }
+
+  .extra-goods__title {
+    margin: 0 0 80px;
+  }
+
+  .extra-goods__order-button {
+    margin: 0 38px;
+  }
+
+  .extra-goods__gift-wrapper {
+    margin: 0 30px 10px;
+  }
 }
