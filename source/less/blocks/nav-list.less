@@ -35,9 +35,27 @@
   }
 
   .nav-list__item {
-    border: none;
+    border-top: none;
     margin-left: 35px;
-    padding-bottom: 11px;
-    margin-bottom: 5px;
+    padding-bottom: 8px;
+    margin-bottom: 6px;
+  }
+
+  .nav-list__item--current {
+    border-bottom: 2px solid #68b738;
+  }
+}
+
+@media (min-width: @desktop) {
+  .nav-list {
+    background: none;
+  }
+
+  .nav-list__link {
+    color: #ffffff;
+  }
+
+  .nav-list__item--current {
+    border-bottom: 2px solid #ffffff;
   }
 }

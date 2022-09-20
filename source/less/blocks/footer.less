@@ -33,7 +33,9 @@
   font-size: 14px;
   line-height: 20px;
   margin-left: 3px;
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   width: 139px;
 }
 
@@ -88,5 +90,53 @@
 @media (min-width: @tablet) {
   .footer__links-wrapper {
     display: flex;
+    align-items: center;
+    padding: 24px 0;
+  }
+
+  .footer__welcome-dealers {
+    padding: 57px 70px 60px;
+  }
+
+  .footer__welcome-dealers-text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    padding-top: 4px;
+  }
+
+  .footer__welcome-dealers-address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+    margin-left: 0;
+    justify-content: flex-end;
+  }
+
+  .address-street {
+    padding-bottom: 18px;
+  }
+
+  .footer__welcome-wrapper {
+    max-width: 100%;
+  }
+
+  .footer__map {
+    height: 400px;
+  }
+
+  .footer__map-google-wrapper {
+    height: 400px;
+  }
+
+  .footer__map-image-wrapper {
+    height: 400px;
+  }
+
+  .footer__logo-wrapper {
+    border-bottom: none;
+    margin: 0 155px 0 30px;
   }
 }

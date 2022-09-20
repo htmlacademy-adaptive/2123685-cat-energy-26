@@ -11,9 +11,23 @@
 @media (min-width: @tablet) {
   .catalog-list {
     border-top: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     margin: 0 30px;
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
+  }
+
+  .catalog-list__item {
+    margin-bottom: 61px;
+    border-top: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .catalog-list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
