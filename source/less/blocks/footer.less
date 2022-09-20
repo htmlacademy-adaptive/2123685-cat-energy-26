@@ -140,3 +140,37 @@
     margin: 0 155px 0 30px;
   }
 }
+
+@media (min-width: @desktop) {
+  .footer__container {
+    position: relative;
+    padding-top: 95px;
+    padding-bottom: 102px;
+    min-height: 198px;
+  }
+
+  .footer__map {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .footer__welcome-dealers {
+    width: 565px;
+    padding: 57px 80px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 5;
+    left: 50%;
+    margin-left: -610px;
+  }
+
+  .footer__map,
+  .footer__map-google-wrapper,
+  .footer__map-image-wrapper {
+    height: 100%;
+  }
+}
