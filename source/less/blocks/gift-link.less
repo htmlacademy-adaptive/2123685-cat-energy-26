@@ -58,3 +58,21 @@
     bottom: 50%;
   }
 }
+
+@media (min-width: @desktop) {
+  .gift-link {
+    background: url("../img/gift-cat-desktop.jpg") no-repeat 0 0;
+    width: 245px;
+    height: 289px;
+    padding-top: 217px;
+
+    &::after {
+      left: 85px;
+      top: 98px;
+    }
+  }
+
+  .gift-link__text {
+    width: 175px;
+  }
+}

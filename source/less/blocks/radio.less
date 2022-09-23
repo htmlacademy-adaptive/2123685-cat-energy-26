@@ -41,6 +41,20 @@
   display: block;
 }
 
+.radio__label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.radio__label:disabled::before {
+  border: 1px solid #bababa;
+  opacity: 0.3;
+}
+
+.radio__label:disabled {
+  color: #222222;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet) {
   .radio__label {
     font-size: 20px;

@@ -85,6 +85,15 @@
   text-decoration: none;
 }
 
+.card__order-button:hover {
+  background-color: #5eaa2f;
+}
+
+.card__order-button:active {
+  background-color: #5eaa2f;
+  color: rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: @tablet) {
   .card {
     min-width: 324px;
@@ -97,7 +106,7 @@
       background: #ffffff;
       display: block;
       width: 100%;
-      height: calc(16%);
+      height: 90px;
       position: absolute;
       top: 0;
       left: 0;
@@ -166,5 +175,13 @@
     min-width: auto;
     max-width: unset;
     width: 245px;
+  }
+
+  .card-wrapper {
+    padding: 251px 41px 40px;
+  }
+
+  .card__title {
+    margin: 0 auto 13px;
   }
 }
