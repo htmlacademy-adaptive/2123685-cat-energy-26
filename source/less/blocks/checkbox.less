@@ -27,11 +27,28 @@
     height: 19px;
     left: 5px;
     top: 1px;
+    cursor: pointer;
   }
 }
 
 .checkbox__input:checked+.checkbox__label::after {
   display: block;
+}
+
+.checkbox__label:hover::before {
+  border: 1px solid #bababa;
+}
+
+.checkbox__label:disabled::before {
+  opacity: 0.3;
+}
+
+.checkbox__label:disabled::after {
+  opacity: 0.3;
+}
+
+.checkbox__label:disabled {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet) {

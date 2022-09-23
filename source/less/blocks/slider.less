@@ -78,6 +78,15 @@
   left: 100%;
 }
 
+.slider__control:hover {
+  background: #68b738;
+}
+
+.slider__control:active {
+  background: #68b738;
+  opacity: 0.6;
+}
+
 .slider__handle {
   border: 2px solid #666666;
   width: 40px;
@@ -162,5 +171,9 @@
 @media (min-width: @desktop) {
   .slider__screen {
     background-color: #f2f2f2;
+
+    &::after {
+      height: 135px;
+    }
   }
 }

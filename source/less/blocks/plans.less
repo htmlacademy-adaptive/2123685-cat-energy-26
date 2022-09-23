@@ -79,6 +79,30 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #000000;
+  position: relative;
+}
+
+.plans__link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("../img/icon-arrow.svg");
+  width: 24px;
+  height: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -40px;
+}
+
+.plans__link:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.plans__link:hover::after {
+  background: url("../img/icon-arrow-hover.svg");
+  width: 32px;
+  right: -48px;
 }
 
 @media (min-width: @tablet) {
@@ -114,6 +138,15 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .plans__link::after {
+    right: -50px;
+  }
+
+  .plans__link:hover::after {
+    width: 32px;
+    right: -58px;
   }
 
   .plans__item::before {
@@ -168,10 +201,10 @@
       width: 100px;
       height: 100px;
       top: 46px;
-      left: 52px;  
+      left: 52px;
       right: unset;
     }
-  
+
     &::after {
       display: block;
       width: 70px;
@@ -181,6 +214,7 @@
       right: unset;
     }
   }
+
   .plans__item--gain::after {
     width: 134px;
     height: 56px;
