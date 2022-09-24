@@ -17,6 +17,10 @@
   background: url("/img/welcome-cat.jpg") no-repeat center 0;
   background-size: auto 100%;
   z-index: 1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/welcome-cat-2x.jpg");
+  }
 }
 
 .welcome__container::after {
@@ -101,6 +105,10 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-product-welcome-tablet-2x.png");
+      }
     }
   }
 
@@ -164,12 +172,16 @@
       content: "";
       position: absolute;
       display: block;
-      background: url("../img/welcome-cat-desktop.jpg") no-repeat right 0;
+      background: #68b738 url("../img/welcome-cat-desktop.jpg") no-repeat right 0;
       background-size: cover;
       right: 0;
       top: -112px;
       width: 50%;
       height: calc(100% + 70px);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/welcome-cat-desktop-2x.jpg");
+      }
     }
 
     &::after {
@@ -178,6 +190,10 @@
       background: url("../img/main-product-welcome-desktop-1x.png") no-repeat 0 0;
       transform: translateX(-29%);
       bottom: 96px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/main-product-welcome-desktop-2x.png");
+      }
     }
   }
 

@@ -6,6 +6,14 @@
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" sizes="16x16" href="favicon-16.png" type="image/x-icon">
+  <link rel="icon" sizes="32x32" href="favicon-32.png" type="image/x-icon">
+  <link rel="icon" sizes="152x152" href="favicon-152.png" type="image/x-icon">
+  <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -36,9 +44,9 @@
       </nav>
     </div>
   </header>
-  <main class="main-container">
-    <h1 class="inner-title">Подбор программы</h1>
-    <p class="inner-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <main class="main-container form">
+    <h1 class="inner-title form__title">Подбор программы</h1>
+    <p class="inner-text form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     <form class="form-plan" action="https://echo.htmlacademy.ru/" method="post">
       <div class="form-plan__info-container">
         <section class="form-plan__cat-info cat-info">
@@ -164,8 +172,8 @@
           </div>
         </div>
       </section>
-      <div class="button-star__wrapper">
-        <div class="button__wrapper">
+      <div class="form-plan__button-star-wrapper">
+        <div class="form-plan__button-wrapper">
           <button class="form-plan__button button">Отправить заявку</button>
         </div>
         <span class="form-plan__star-text star-text">* — Обязательные поля</span>
@@ -244,10 +252,9 @@
             <span class="academy__text">HTML Academy</span>
           </a>
           <a href="https://htmlacademy.ru/intensive/adaptive" class="academy__link academy__link-logo">
-            <svg class="academy__logo" width="27" height="34" viewBox="0 0 27 34" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <use href="./img/sprite.svg#htmlacademy" />
-            </svg>
+            <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use href="./img/sprite.svg#html-academy" />
+              </svg>
           </a>
         </div>
       </div>

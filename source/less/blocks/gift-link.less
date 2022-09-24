@@ -1,6 +1,6 @@
 .gift-link {
   display: block;
-  background: url(../img/gift-cat-mobile.jpg) no-repeat 0 0;
+  background: url("../img/gift-cat-mobile.jpg") no-repeat 0 0;
   background-size: cover;
   width: 100%;
   max-width: 400px;
@@ -10,6 +10,10 @@
   padding-bottom: 41px;
   box-sizing: border-box;
   text-align: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-cat-mobile-2x.jpg");
+  }
 
   &::after {
     content: "";
@@ -42,20 +46,31 @@
     background: url("../img/gift-cat-tablet.jpg") no-repeat 0 0;
     max-width: 800px;
     min-height: 200px;
+    position: relative;
+    padding: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-cat-tablet-2x.jpg");
+    }
 
     &::after {
-      left: 78px;
-      bottom: 50%;
+      left: 79px;
       transform: translateY(-50%);
+      top: 50%;
       width: 80px;
       height: 82px;
     }
   }
 
   .gift-link__text {
-    left: 422px;
+    left: 424px;
     transform: translateY(-50%);
-    bottom: 50%;
+    bottom: unset;
+    top: 50%;
+    margin: 0;
+    position: absolute;
+    text-align: left;
+    width: 184px;
   }
 }
 
@@ -66,6 +81,10 @@
     height: 289px;
     padding-top: 217px;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-cat-desktop-2x.jpg");
+    }
+
     &::after {
       left: 85px;
       top: 98px;
@@ -74,5 +93,10 @@
 
   .gift-link__text {
     width: 175px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 42px;
+    top: unset;
   }
 }
