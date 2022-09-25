@@ -39,15 +39,11 @@
   border: 1px solid #bababa;
 }
 
-.checkbox__label:disabled::before {
-  opacity: 0.3;
+.checkbox__input:focus + .checkbox__label::before {
+  border: 1px solid #bababa;
 }
 
-.checkbox__label:disabled::after {
-  opacity: 0.3;
-}
-
-.checkbox__label:disabled {
+.checkbox__input:disabled + .checkbox__label {
   opacity: 0.3;
 }
 
