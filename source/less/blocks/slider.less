@@ -40,6 +40,11 @@
 
 .slider__screen--before .slider__picture {
   background-image: url("../img/cat-before-mobile@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-before-mobile@2x.png");
+    background-size: cover;
+  }
 }
 
 .slider--demo .slider__screen--before {
@@ -56,6 +61,11 @@
 
 .slider__screen--after .slider__picture {
   background-image: url("../img/cat-after-mobile@1x.png");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-after-mobile@2x.png");
+    background-size: cover;
+  }
 }
 
 .slider__control {
@@ -123,10 +133,20 @@
 
   .slider__screen--before .slider__picture {
     background-image: url("../img/cat-before-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-before-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   .slider__screen--after .slider__picture {
     background-image: url("../img/cat-after-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/cat-after-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   .slider__container {

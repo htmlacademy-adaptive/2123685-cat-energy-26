@@ -5,6 +5,9 @@
   text-transform: uppercase;
   padding-left: 47px;
   position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 3px;
 
   &::before {
     content: "";
@@ -31,7 +34,7 @@
   }
 }
 
-.checkbox__input:checked+.checkbox__label::after {
+.checkbox__input:checked + .checkbox__label::after {
   display: block;
 }
 
@@ -39,15 +42,11 @@
   border: 1px solid #bababa;
 }
 
-.checkbox__label:disabled::before {
-  opacity: 0.3;
+.checkbox__input:focus + .checkbox__label::before {
+  border: 1px solid #bababa;
 }
 
-.checkbox__label:disabled::after {
-  opacity: 0.3;
-}
-
-.checkbox__label:disabled {
+.checkbox__input:disabled + .checkbox__label {
   opacity: 0.3;
 }
 
@@ -56,6 +55,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 58px;
+    padding-top: 0;
 
     &::before {
       width: 38px;

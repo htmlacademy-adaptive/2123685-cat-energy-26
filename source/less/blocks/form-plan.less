@@ -1,9 +1,35 @@
+.form-plan__button-wrapper {
+  margin: 0 20px 21px;
+}
+
+@media (min-width: @tablet) {
+  .form-plan__button-star-wrapper {
+    display: flex;
+    margin: 0 65px 51px 71px;
+    position: relative;
+  }
+
+  .form-plan__button-wrapper {
+    margin: 0 0 21px;
+  }
+}
+
 @media (min-width: @desktop) {
   .form-plan__info-container {
     display: grid;
-    grid-template-columns: 569px 568px;
+    grid-template-columns: 569px 569px;
     column-gap: 80px;
     width: 1220px;
-    margin: 0 auto;
+    margin: 0 auto 69px;
+  }
+
+  .form-plan__button-star-wrapper {
+    width: 1220px;
+    margin: 0 auto 82px;
+    align-items: center;
+  }
+
+  .form-plan__button-wrapper {
+    margin: 0 82px 0 0;
   }
 }

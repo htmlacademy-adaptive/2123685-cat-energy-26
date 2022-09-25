@@ -1,5 +1,5 @@
 .extra__title {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .extra__checkbox-wrapper {
@@ -28,5 +28,22 @@
 
   .extra__input {
     margin-bottom: 42px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .extra__checkbox-wrapper {
+    width: 1220px;
+    margin: 0 auto 66px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+
+  .extra__input {
+    margin: 0;
+  }
+
+  .extra__title {
+    margin-bottom: 61px;
   }
 }

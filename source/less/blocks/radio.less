@@ -45,13 +45,11 @@
   border: 1px solid #bababa;
 }
 
-.radio__label:disabled::before {
+.radio__input:focus + .radio__label::before {
   border: 1px solid #bababa;
-  opacity: 0.3;
 }
 
-.radio__label:disabled {
-  color: #222222;
+.radio__input:disabled + .radio__label {
   opacity: 0.3;
 }
 
